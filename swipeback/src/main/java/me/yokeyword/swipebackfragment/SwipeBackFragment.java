@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -17,7 +20,7 @@ import android.view.animation.AnimationUtils;
  * SwipeBackFragment
  * Created by YoKeyword on 16/4/19.
  */
-public class SwipeBackFragment extends Fragment {
+public class SwipeBackFragment extends DialogFragment {
     private static final String SWIPEBACKFRAGMENT_STATE_SAVE_IS_HIDDEN = "SWIPEBACKFRAGMENT_STATE_SAVE_IS_HIDDEN";
     private SwipeBackLayout mSwipeBackLayout;
     private Animation mNoAnim;
