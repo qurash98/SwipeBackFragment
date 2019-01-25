@@ -1,7 +1,7 @@
 package me.yokeyword.swipebackfragment.sample;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.widget.Toast;
 
 import me.yokeyword.swipebackfragment.SwipeBackActivity;
@@ -14,7 +14,6 @@ public class MainActivity extends SwipeBackActivity implements BaseSwipeBackFrag
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 给其下Fragment的默认背景 (默认使用Fragment根布局的background属性,如若没有则使用Theme的windowBackground属性)
         setDefaultFragmentBackground(android.R.color.white);
 
         if (savedInstanceState == null) {
